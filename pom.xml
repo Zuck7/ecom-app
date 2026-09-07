@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.app</groupId>
-	<artifactId>ecom-application</artifactId>
+	<artifactId>ecom-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>
