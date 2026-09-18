@@ -9,16 +9,16 @@
 
 ## Phases
 
-- [ ] [Phase 0 — Setup](phases/00-setup.md)
-- [ ] [Phase 1 — Product API](phases/01-product-api.md)
-- [ ] [Phase 2 — Clean backend](phases/02-clean-backend.md)
-- [ ] [Phase 3 — Angular frontend](phases/03-angular-frontend.md)
-- [ ] [Phase 4 — Authentication](phases/04-authentication.md)
-- [ ] [Phase 5 — Cart and orders](phases/05-cart-and-orders.md)
-- [ ] [Phase 6 — Admin](phases/06-admin.md)
-- [ ] [Phase 7 — Payments](phases/07-payments.md)
-- [ ] [Phase 8 — Testing](phases/08-testing.md)
-- [ ] [Phase 9 — Ship it](phases/09-ship-it.md)
+- [x] [Phase 0 — Setup](phases/00-setup.md)
+- [x] [Phase 1 — Product API](phases/01-product-api.md)
+- [x] [Phase 2 — Clean backend](phases/02-clean-backend.md)
+- [x] [Phase 3 — Angular frontend](phases/03-angular-frontend.md)
+- [x] [Phase 4 — Authentication](phases/04-authentication.md)
+- [x] [Phase 5 — Cart and orders](phases/05-cart-and-orders.md)
+- [x] [Phase 6 — Admin](phases/06-admin.md)
+- [x] [Phase 7 — Payments](phases/07-payments.md)
+- [x] [Phase 8 — Testing](phases/08-testing.md)
+- [x] [Phase 9 — Ship it](phases/09-ship-it.md)
 
 ## Session log
 
