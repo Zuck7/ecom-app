@@ -32,6 +32,11 @@ The Spring Boot app builds, starts, and connects to an in-memory H2 database.
       <artifactId>h2</artifactId>
       <scope>runtime</scope>
   </dependency>
+  <!-- Spring Boot 4 moved the H2 web console into its own module -->
+  <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-h2console</artifactId>
+  </dependency>
   ```
 - [ ] Update `src/main/resources/application.properties`:
   ```properties
@@ -40,6 +45,7 @@ The Spring Boot app builds, starts, and connects to an in-memory H2 database.
   spring.jpa.hibernate.ddl-auto=update
   spring.jpa.show-sql=true
   spring.h2.console.enabled=true
+  spring.jpa.open-in-view=false
   ```
 - [ ] Run the app again and open `http://localhost:8080/h2-console` (JDBC URL: `jdbc:h2:mem:ecom`, user `sa`, empty password).
 - [ ] Install a way to call APIs: Postman, Bruno, or the VS Code "REST Client" extension (`.http` files).
