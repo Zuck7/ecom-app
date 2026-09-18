@@ -1,0 +1,15 @@
+# Maven
+target/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+!frontend/.vscode/
+
+# OS
+.DS_Store
+
+# Secrets and local data
+.env
+uploads/

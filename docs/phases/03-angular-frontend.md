@@ -52,10 +52,10 @@ An Angular app in `frontend/` that lists products (with pagination and category 
     size: number;
   }
   ```
-- [ ] `ng g service services/product`:
+- [ ] `ng g service services/product-api` (creates `product-api.ts` with class `ProductApi`). Don't name it `product`: since Angular 20 the CLI drops the `Service` suffix, so you'd get a class `Product` that clashes with your `Product` model.
   ```ts
   @Injectable({ providedIn: 'root' })
-  export class ProductService {
+  export class ProductApi {
     private http = inject(HttpClient);
 
     getProducts(page = 0, size = 12) {
@@ -74,12 +74,13 @@ An Angular app in `frontend/` that lists products (with pagination and category 
 - [ ] `ng g component pages/product-list` — loads products into a `signal`, renders cards with `@for`.
 - [ ] `ng g component pages/product-detail` — reads `:id` from the route, loads one product.
 - [ ] `ng g component pages/not-found`.
+  > Angular 20+ names files and classes without suffixes: `pages/product-list/product-list.ts` exports `ProductList` (not `ProductListComponent`).
 - [ ] Routes in `app.routes.ts`:
   ```ts
   export const routes: Routes = [
-    { path: '', component: ProductListComponent },
-    { path: 'products/:id', component: ProductDetailComponent },
-    { path: '**', component: NotFoundComponent },
+    { path: '', component: ProductList },
+    { path: 'products/:id', component: ProductDetail },
+    { path: '**', component: NotFound },
   ];
   ```
 - [ ] Add pagination buttons (Prev / Next) and a category dropdown.
